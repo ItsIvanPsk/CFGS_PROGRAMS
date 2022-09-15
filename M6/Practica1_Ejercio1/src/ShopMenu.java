@@ -20,12 +20,12 @@ public class ShopMenu {
         sm.getGames().put("0.AD", 0);
         sm.getGames().put("WOW", 21);
 
-
         while (true) {
             System.out.println("----------------------------\n Shop Menu \n----------------------------");
             for (int i = 0; i < sm.getMenuItems().length; i++) {
                 System.out.println(sm.getMenuItems()[i]);
             }
+            System.out.print("Option: ");
             while (!sm.getSc().hasNextInt()) {
                 System.out.println("The option only can be a Integer\n");
                 System.out.print("Option: ");
@@ -36,9 +36,22 @@ public class ShopMenu {
             {
                 case 1: {
                     sm.addNewValue(sm);
+                    break;
                 }
                 case 2: {
                     sm.editValue(sm);
+                    break;
+                }
+                case 3: {
+                    sm.deleteValue(sm);
+                    break;
+                }
+                case 4: {
+                    sm.showGames(sm.getGames());
+                    break;
+                }
+                case 5: {
+                    System.exit(0);
                 }
             }
         }
@@ -172,6 +185,44 @@ public class ShopMenu {
             }
         }
     }
+
+    public void deleteValue(ShopMenu sm) {
+        System.out.println("--------------------- Delete Element ---------------------");
+        System.out.println("Name: ");
+        while (!sc.hasNext()) {
+            System.out.println("The option only can be a String\n");
+            System.out.print("Option: ");
+            sc.nextLine();
+        }
+        String gameName = sc.next();
+        sc.nextLine();
+        if (gameName == null) {
+            System.out.println("NULL is not a valid option.");
+        }
+        else if (!sm.getGames().containsKey(gameName)) {
+            System.out.println("The game " + gameName + " does not exists.");
+        }
+        else {
+            System.out.println("Are you sure you want to delete the product " + gameName + " (S / N)");
+            String validator =  sc.nextLine();;
+            if (validator.equalsIgnoreCase("S")) {
+                sm.getGames().remove(gameName);
+                System.out.println("Delete product sucsesfuly.");
+            }else {
+                System.out.println("Delete product canceled.");
+            }
+        }
+    }
+
+    public static void showGames(Map m){
+        System.out.println("Games: ");
+        for(Iterator i=m.keySet().iterator(); i.hasNext();){
+            String k=(String)i.next();
+            int v=(int)m.get(k);
+            System.out.println("Name: " + k+ " Price: " +v);
+        }
+    }
+
     public NavigableMap<String, Integer> getGames() {
         return games;
     }

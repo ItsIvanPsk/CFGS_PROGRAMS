@@ -53,7 +53,6 @@ public class Agenda {
         for (int i = 0; i < getContactos().size(); i++) {
             persones.put(getContactos().get(i), "(+52)-4000-7000");
         }
-        mostrarAgenda();
     }
 
     public ArrayList<String> getContactos()
