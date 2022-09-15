@@ -1,12 +1,8 @@
 import java.util.*;
-
 public class Agenda2 {
-
     private TreeMap llista = new TreeMap();
 
     public static void main(String[] args) {
-
-
         // Crear una nova agenda ordenada
         Agenda2 a2 = new Agenda2();
 
@@ -21,9 +17,11 @@ public class Agenda2 {
         a2.llista.put("Pare", "(55)-9555-3270");
         a2.llista.put("Botiga", "(874)-2400-8600");
 
-        // Cridem un mètode que mostrarà la llista de contactes de l’agenda.
-        // L’orde establert als element inserits al TreeMap és ascendent
-        // del seu ordre d’inserció.
+        /*
+            Cridem un mètode que mostrarà la llista de contactes de l’agenda.
+            L’orde establert als element inserits al TreeMap és ascendent
+            del seu ordre d’inserció.
+         */
         mostrarAgenda(a2.llista);
 
         // Definirem dos subarbres utilitzant mètodes específics

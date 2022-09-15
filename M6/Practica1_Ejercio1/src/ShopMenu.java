@@ -1,15 +1,11 @@
 import java.util.*;
-
 public class ShopMenu {
     private String[] menuItems = {
             "1) Add Element", "2) Edit Price", "3) Delete Element",
             "4) Show All Elements", "5) Exit"
     };
     private NavigableMap<String,Integer> games = new TreeMap<String,Integer>();
-
     private Scanner sc = new Scanner(System.in);
-
-
 
     public static void main(String[] args) {
         ShopMenu sm = new ShopMenu();
