@@ -7,8 +7,8 @@ public class VisorDeImagen extends JFrame implements ActionListener {
     private JFrame ventana;
 
     private JMenuBar barraDeMenu;
-    private JMenu menuArchivo, menuGuardar, menuAyuda;
-    private JMenuItem elementoAñadir, elementoEditar, elementoAyuda;
+    private JMenu menuArchivo, menuAyuda;
+    private JMenuItem elementoAñadir, elementoEditar, elentoGrabar,  elementoAyuda;
 
     public VisorDeImagen() {
         ConstruirVentana();
@@ -44,21 +44,28 @@ public class VisorDeImagen extends JFrame implements ActionListener {
 
         menuArchivo = new JMenu("Opciones");
         barraDeMenu.add(menuArchivo);
-        menuGuardar = new JMenu("Guardar");
-        barraDeMenu.add(menuGuardar);
+
         menuAyuda = new JMenu("Ayuda");
         barraDeMenu.add(menuAyuda);
 
         elementoAñadir=new JMenuItem("Añadir");
         elementoAñadir.addActionListener(this);
+        elementoAñadir.setActionCommand("Añadir");
         menuArchivo.add(elementoAñadir);
+
+        elentoGrabar=new JMenuItem("Grabar");
+        elentoGrabar.addActionListener(this);
+        elentoGrabar.setActionCommand("Grabar");
+        menuArchivo.add(elentoGrabar);
 
         elementoEditar=new JMenuItem("Salir");
         elementoEditar.addActionListener(this);
+        elementoEditar.setActionCommand("Salir");
         menuArchivo.add(elementoEditar);
 
         elementoAyuda=new JMenuItem("Acerca del Visor de Imagenes");
         elementoAyuda.addActionListener(this);
+        elementoAyuda.setActionCommand("Ayuda");
         menuAyuda.add(elementoAyuda);
     }
 
@@ -70,14 +77,33 @@ public class VisorDeImagen extends JFrame implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-
+        String comando = e.getActionCommand();
+        if (comando.equals("Añadir"))
+            abrirArchivo();
+        else if (comando.equals("Grabar"))
+            grabarArchivo();
+        else if (comando.equals("Salir"))
+            salir();
+        else if (comando.equals("Ayuda"))
+            ayuda();
     }
 
-    private void grabarArchivo() {}
+    private void grabarArchivo() {
+        System.out.println("Grabar");
+    }
 
-    private void salir() {}
+    private void salir() {
+        System.out.println("Salir");
+        System.exit(0);
+    }
 
-    private void abrirArchivo() {}
+    private void abrirArchivo() {
+        System.out.println("Abrir");
+    }
+
+    private void ayuda() {
+        System.out.println("Ayuda");
+    }
 
 }
 
