@@ -14,8 +14,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-
         final Button button = findViewById(R.id.myButton);
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -24,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
                 CharSequence text = "Goodbye!";
                 Toast toast = Toast.makeText(context, text, duration);
-                toast.show();
+                toast.show(); //
             }
         });
     }

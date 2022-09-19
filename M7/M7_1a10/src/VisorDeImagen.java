@@ -8,7 +8,7 @@ public class VisorDeImagen extends JFrame implements ActionListener {
 
     private JMenuBar barraDeMenu;
     private JMenu menuArchivo, menuAyuda;
-    private JMenuItem elementoAñadir, elementoEditar, elentoGrabar,  elementoAyuda;
+    private JMenuItem elementoAbrir, elementoSalir, elementoEditar,elentoGrabar,  elementoAyuda;
 
     public VisorDeImagen() {
         ConstruirVentana();
@@ -34,9 +34,9 @@ public class VisorDeImagen extends JFrame implements ActionListener {
         menuArchivo = new JMenu("Archivo");
         barraDeMenu.add(menuArchivo);
 
-        elementoAñadir = new JMenuItem("Abrir");
+        elementoAbrir = new JMenuItem("Abrir");
         elementoEditar = new JMenuItem("Editar");
-        menuArchivo.add(elementoAñadir);
+        menuArchivo.add(elementoAbrir);
         menuArchivo.add(elementoEditar);
 
         barraDeMenu = new JMenuBar();
@@ -48,20 +48,29 @@ public class VisorDeImagen extends JFrame implements ActionListener {
         menuAyuda = new JMenu("Ayuda");
         barraDeMenu.add(menuAyuda);
 
-        elementoAñadir=new JMenuItem("Añadir");
-        elementoAñadir.addActionListener(this);
-        elementoAñadir.setActionCommand("Añadir");
-        menuArchivo.add(elementoAñadir);
+        elementoAbrir=new JMenuItem("Abrir");
+        elementoAbrir.addActionListener(new AbrirActionListener() {
+            public void actionPerformed(ActionEvent e)
+            {
+                abrirArchivo();
+            }
+        });
+        elementoAbrir.setActionCommand("Añadir");
+        menuArchivo.add(elementoAbrir);
 
         elentoGrabar=new JMenuItem("Grabar");
         elentoGrabar.addActionListener(this);
         elentoGrabar.setActionCommand("Grabar");
         menuArchivo.add(elentoGrabar);
 
-        elementoEditar=new JMenuItem("Salir");
-        elementoEditar.addActionListener(this);
-        elementoEditar.setActionCommand("Salir");
-        menuArchivo.add(elementoEditar);
+        elementoSalir=new JMenuItem("Salir");
+        elementoSalir.addActionListener(new SalirActionListener() {
+            public void actionPerformed(ActionEvent e)
+            {
+                salir();
+            }
+        });        elementoSalir.setActionCommand("Salir");
+        menuArchivo.add(elementoSalir);
 
         elementoAyuda=new JMenuItem("Acerca del Visor de Imagenes");
         elementoAyuda.addActionListener(this);
@@ -75,18 +84,6 @@ public class VisorDeImagen extends JFrame implements ActionListener {
         visor.setVisible(true);
     }
 
-    @Override
-    public void actionPerformed(ActionEvent e) {
-        String comando = e.getActionCommand();
-        if (comando.equals("Añadir"))
-            abrirArchivo();
-        else if (comando.equals("Grabar"))
-            grabarArchivo();
-        else if (comando.equals("Salir"))
-            salir();
-        else if (comando.equals("Ayuda"))
-            ayuda();
-    }
 
     private void grabarArchivo() {
         System.out.println("Grabar");
@@ -105,51 +102,28 @@ public class VisorDeImagen extends JFrame implements ActionListener {
         System.out.println("Ayuda");
     }
 
+    @Override
+    public void actionPerformed(ActionEvent e) {
+
+    }
+
+
+    class AbrirActionListener implements  ActionListener{
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            abrirArchivo();
+        }
+    }
+    class SalirActionListener implements  ActionListener{
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            salir();
+        }
+    }
+
+
 }
 
 /*
-
-import javax.swing.*;
-import java.awt.*;
-import java.awt.event.*;
-public class VisorDeImagen extends JFrame implements ActionListener{
-    private JMenuBar mb;
-    private JMenu menu1;
-    private JMenuItem mi1,mi2,mi3;
-    public VisorDeImagen() {
-        setLayout(null);
-        mb=new JMenuBar();
-        setJMenuBar(mb);
-        menu1=new JMenu("Opciones");
-        mb.add(menu1);
-        mi1=new JMenuItem("Rojo");
-        mi1.addActionListener(this);
-        menu1.add(mi1);
-        mi2=new JMenuItem("Verde");
-        mi2.addActionListener(this);
-        menu1.add(mi2);
-        mi3=new JMenuItem("Azul");
-        mi3.addActionListener(this);
-        menu1.add(mi3);
-    }
-
-    public void actionPerformed(ActionEvent e) {
-        Container f=this.getContentPane();
-        if (e.getSource()==mi1) {
-            f.setBackground(new Color(255,0,0));
-        }
-        if (e.getSource()==mi2) {
-            f.setBackground(new Color(0,255,0));
-        }
-        if (e.getSource()==mi3) {
-            f.setBackground(new Color(0,0,255));
-        }
-    }
-
-    public static void main(String[] ar) {
-        VisorDeImagen formulario1=new VisorDeImagen();
-
-    }
-}
 
  */
