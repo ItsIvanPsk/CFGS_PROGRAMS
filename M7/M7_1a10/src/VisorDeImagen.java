@@ -1,129 +1,88 @@
-import javax.swing.*;
-import java.awt.*;
-import java.awt.event.*;
+import java.awt.Container;
 
-public class VisorDeImagen extends JFrame implements ActionListener {
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
+import javax.swing.JPanel;
+
+public class VisorDeImagen {
     private JFrame ventana;
 
-    private JMenuBar barraDeMenu;
-    private JMenu menuArchivo, menuAyuda;
-    private JMenuItem elementoAbrir, elementoSalir, elementoEditar,elentoGrabar,  elementoAyuda;
-
     public VisorDeImagen() {
-        ConstruirVentana();
+        construirVentana();
     }
-    public void ConstruirVentana()
-    {
+
+    private void construirVentana() {
         ventana = new JFrame("Visor de Imagenes");
-        this.setResizable(false);
-        this.setDefaultCloseOperation(EXIT_ON_CLOSE);
-        this.setBounds(10,10,500,400);
-        ConstruirMenu();
 
+        Container panelContenedor = ventana.getContentPane();
+        panelContenedor  =  ventana.getContentPane();
+
+        JLabel etiquetaNombreDeArchivo = new JLabel("wrngwalenfweinfowienfwoienfowienfowienf");
+        panelContenedor.add(etiquetaNombreDeArchivo);
+
+        Container panelDeImagen = new JPanel();
+        panelContenedor.add(panelDeImagen);
+
+        JLabel etiquetaEstado  =  new  JLabel("Version  1 .O");
+        panelContenedor.add(etiquetaEstado);
+
+        construirBarraDeMenu(ventana);
+        ventana.pack();
+        ventana.setSize(400, 400);
+        ventana.setVisible(true);
     }
-
-    public void ConstruirMenu()
-    {
-        barraDeMenu = new JMenuBar();
+    public void construirBarraDeMenu(JFrame ventana) {
+        JMenuBar barraDeMenu = new JMenuBar();
         ventana.setJMenuBar(barraDeMenu);
-        ventana.add(barraDeMenu);
 
-        setLayout(null);
-
-        menuArchivo = new JMenu("Archivo");
+        JMenu menuArchivo = new JMenu("Archivo");
         barraDeMenu.add(menuArchivo);
 
-        elementoAbrir = new JMenuItem("Abrir");
-        elementoEditar = new JMenuItem("Editar");
-        menuArchivo.add(elementoAbrir);
-        menuArchivo.add(elementoEditar);
-
-        barraDeMenu = new JMenuBar();
-        setJMenuBar(barraDeMenu);
-
-        menuArchivo = new JMenu("Opciones");
-        barraDeMenu.add(menuArchivo);
-
-        menuAyuda = new JMenu("Ayuda");
-        barraDeMenu.add(menuAyuda);
-
-        elementoAbrir=new JMenuItem("Abrir");
-        elementoAbrir.addActionListener(new AbrirActionListener() {
-            public void actionPerformed(ActionEvent e)
-            {
-                abrirArchivo();
-            }
+        JMenuItem elementoAbrir = new JMenuItem("Abrir");
+        elementoAbrir.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) { abrirArchivo(); }
         });
-        elementoAbrir.setActionCommand("Añadir");
         menuArchivo.add(elementoAbrir);
 
-        elentoGrabar=new JMenuItem("Grabar");
-        elentoGrabar.addActionListener(this);
-        elentoGrabar.setActionCommand("Grabar");
-        menuArchivo.add(elentoGrabar);
+        JMenuItem elementoGrabar = new JMenuItem("Grabar");
+        elementoGrabar.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) { grabarArchivo(); }
+        });
+        menuArchivo.add(elementoGrabar);
 
-        elementoSalir=new JMenuItem("Salir");
-        elementoSalir.addActionListener(new SalirActionListener() {
-            public void actionPerformed(ActionEvent e)
-            {
-                salir();
-            }
-        });        elementoSalir.setActionCommand("Salir");
+        JMenuItem elementoSalir = new JMenuItem("Salir");
+        elementoSalir.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) { salir(); }
+        });
+
         menuArchivo.add(elementoSalir);
 
-        elementoAyuda=new JMenuItem("Acerca del Visor de Imagenes");
-        elementoAyuda.addActionListener(this);
-        elementoAyuda.setActionCommand("Ayuda");
-        menuAyuda.add(elementoAyuda);
+        JMenu menuAyuda = new JMenu("Ayuda");
+        barraDeMenu.add(menuAyuda);
+
+        JMenuItem elementoAcercaDe = new JMenuItem("Acerca del Visor de Imagenes");
+        elementoAcercaDe.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) { acercaDe(); }
+        });
+        menuAyuda.add(elementoAcercaDe);
     }
-
-    public static void main(String[] args) {
-
-        VisorDeImagen visor = new VisorDeImagen();
-        visor.setVisible(true);
-    }
-
-
-    private void grabarArchivo() {
-        System.out.println("Grabar");
-    }
-
-    private void salir() {
-        System.out.println("Salir");
-        System.exit(0);
-    }
-
     private void abrirArchivo() {
-        System.out.println("Abrir");
+        System.out.println("Has seleccionado el item: Abrir.");
     }
-
-    private void ayuda() {
-        System.out.println("Ayuda");
+    private void grabarArchivo() {
+        System.out.println("Has seleccionado el item: Grabar.");
     }
-
-    @Override
-    public void actionPerformed(ActionEvent e) {
-
+    private void salir() {
+        System.out.println("Has seleccionado el item: Salir.");
     }
-
-
-    class AbrirActionListener implements  ActionListener{
-        @Override
-        public void actionPerformed(ActionEvent e) {
-            abrirArchivo();
-        }
+    private void acercaDe() {
+        System.out.println("Has seleccionado el item: Acerca del Visor de ImÃ¡genes.");
     }
-    class SalirActionListener implements  ActionListener{
-        @Override
-        public void actionPerformed(ActionEvent e) {
-            salir();
-        }
-    }
-
-
 }
-
-/*
-
- */
