@@ -2,13 +2,13 @@ public class SelfRun implements Runnable{
     private Thread internalThread;
     private boolean noStopRequired;
     public SelfRun(){
-        System.out.println("Comienza ejecución");
         noStopRequired=true;
         internalThread=new Thread(this);
-        internalThread.start(); }
+        internalThread.start();
+    }
     public void run(){
         while(noStopRequired){
-            System.out.println("En ejecución");
+            System.out.println(internalThread.getName());
             try{ Thread.sleep(500);
             }catch (InterruptedException e){
                 Thread.currentThread().interrupt();}
