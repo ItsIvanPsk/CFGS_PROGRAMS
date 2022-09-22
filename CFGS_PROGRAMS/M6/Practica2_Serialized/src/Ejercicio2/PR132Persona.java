@@ -1,51 +1,62 @@
-package Ejercicio0;
+package Ejercicio2;
 
-        import java.io.ByteArrayInputStream;
-        import java.io.ByteArrayOutputStream;
-        import java.io.DataInputStream;
-        import java.io.DataOutputStream;
-        import java.io.File;
-        import java.io.FileInputStream;
-        import java.io.FileOutputStream;
-        import java.io.IOException;
-        import java.io.ObjectInputStream;
-        import java.io.ObjectOutputStream;
-        import java.io.UnsupportedEncodingException;
-        import java.util.ArrayList;
+import Ejercicio0.Persona;
 
-public class main {
-    public static void main(String[] args) {
-        ArrayList<Persona> personas = new ArrayList<>();
-        personas.add(new Persona("Nerea", 22));
-        personas.add(new Persona("Paco",  25));
-        personas.add(new Persona("Fuengi", 21));
-        personas.add(new Persona("Diosito",  20));
-        personas.add(new Persona("xPeke",  25));
+import java.io.*;
+import java.util.ArrayList;
 
-        String path = "./src/Ejercicio0/DataOutIn.dat";
+public class PR132Persona implements Serializable {
+
+    private String name;
+    private String sur_name;
+    private int age;
+
+    public PR132Persona(String name, String sur_name, int age) {
+        this.name = name;
+        this.sur_name = sur_name;
+        this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return "PR132Persona{" +
+                "name='" + name + '\'' +
+                ", sur_name='" + sur_name + '\'' +
+                ", age=" + age +
+                '}';
+    }
+
+
+    public static void main(String[] args){
+        PR132Persona persona0 = new PR132Persona("Maria", "Lopez", 36);
+        PR132Persona persona1 = new PR132Persona("Gustavo", "Ponts", 63);
+        PR132Persona persona2 = new PR132Persona("Irene", "Sales", 54);
+
+
+        String path = "./src/Ejercicio2/PR132people.dat";
 
         File file = new File(path);
 
         FileOutputStream fos = null;
         DataOutputStream dos = null;
-        for (int i = 0; i < personas.size(); i++) {
-
-        }
         try {
 
-            fos=new FileOutputStream(file);
-            dos=new DataOutputStream(fos);
-            writeSerializableObject(personas.get(0), dos);
-            writeSerializableObject(personas.get(1), dos);
-            writeSerializableObject(personas.get(2), dos);
-            writeSerializableObject(personas.get(3), dos);
-            writeSerializableObject(personas.get(4), dos);
+            fos = new FileOutputStream(file);
+            dos = new DataOutputStream(fos);
+            writeSerializableObject(persona0, dos);
+            writeSerializableObject(persona1, dos);
+            writeSerializableObject(persona2, dos);
             dos.flush();
-        } catch (IOException e) { e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
         } finally {
             try {
-                if(fos!=null){ fos.close(); }
-                if(dos!=null){ dos.close(); }
+                if (fos != null) {
+                    fos.close();
+                }
+                if (dos != null) {
+                    dos.close();
+                }
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -61,14 +72,16 @@ public class main {
             System.out.println(readSerializableObject(dis).toString());
             System.out.println(readSerializableObject(dis).toString());
             System.out.println(readSerializableObject(dis).toString());
-            System.out.println(readSerializableObject(dis).toString());
-            System.out.println(readSerializableObject(dis).toString());
         } catch (IOException e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             try {
-                if(fis!=null){ fis.close(); }
-                if(dis!=null){ dis.close(); }
+                if (fis != null) {
+                    fis.close();
+                }
+                if (dis != null) {
+                    dis.close();
+                }
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -124,4 +137,5 @@ public class main {
         } catch (IOException e) { e.printStackTrace(); }
         return new java.lang.AbstractMethodError();
     }
+
 }
