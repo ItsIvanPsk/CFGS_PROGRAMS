@@ -1,7 +1,5 @@
 package Ejercicio1;
 
-import Ejercicio0.Persona;
-
 import java.io.*;
 import java.util.*;
 
@@ -16,14 +14,12 @@ public class PR131escriu {
 
         String path = "./src/Ejercicio1/PR131HashMapData.ser";
 
-
         File file = new File(path);
 
         FileOutputStream fos = null;
         DataOutputStream dos = null;
 
         try {
-
             fos=new FileOutputStream(file);
             dos=new DataOutputStream(fos);
             writeSerializableObject(hashmap, dos);
@@ -33,25 +29,6 @@ public class PR131escriu {
             try {
                 if(fos!=null){ fos.close(); }
                 if(dos!=null){ dos.close(); }
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        }
-
-        FileInputStream fis = null;
-        DataInputStream dis = null;
-        try {
-
-            fis = new FileInputStream(file);
-            dis = new DataInputStream(fis);
-
-            System.out.println(readSerializableObject(dis).toString());
-        } catch (IOException e) {
-            e.printStackTrace();
-        }finally {
-            try {
-                if(fis!=null){ fis.close(); }
-                if(dis!=null){ dis.close(); }
             } catch (Exception e) {
                 e.printStackTrace();
             }
