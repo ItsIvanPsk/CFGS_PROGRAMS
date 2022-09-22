@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="94756eaf-c257-4225-be58-4896d1b3d456" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../CFGS_PROGRAMS/M9/untitled/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Threads11.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Threads11_Compartida.java" afterDir="false" />
+    <list default="true" id="94756eaf-c257-4225-be58-4896d1b3d456" name="Changes" comment="Commit Ej1 Solved">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/SelfRun.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled/SelfRun.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SelfRun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SelfRun.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ejercicio0/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ejercicio0/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ejercicio0/SelfRun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ejercicio0/SelfRun.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ejercicio0/Threads10.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ejercicio0/Threads10.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ejercicio1/Main2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ejercicio1/Main2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ejercicio1/Threads11.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ejercicio1/Threads11.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ejercicio1/Threads11_Compartida.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ejercicio1/Threads11_Compartida.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ejercicio2/Main3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ejercicio2/Main3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ejercicio2/Threads3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ejercicio2/Threads3.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,18 +36,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/ivanf/Documents/CFGS_PROGRAMS/M9/untitled",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.keymap"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ivanf/Documents/CFGS_PROGRAMS/M9/untitled&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.Main2">
     <configuration name="Ejercicio0" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Ejercicio0" />
@@ -120,5 +120,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Ejercicio1/Threads11.java</url>
+          <line>1</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

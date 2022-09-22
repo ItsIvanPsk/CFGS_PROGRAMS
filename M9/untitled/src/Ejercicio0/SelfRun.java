@@ -1,3 +1,5 @@
+package Ejercicio0;
+
 public class SelfRun implements Runnable{
     private Thread internalThread;
     private boolean noStopRequired;
