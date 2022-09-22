@@ -1,46 +1,32 @@
-package Ejercicio0;
+package Ejercicio1;
 
-        import java.io.ByteArrayInputStream;
-        import java.io.ByteArrayOutputStream;
-        import java.io.DataInputStream;
-        import java.io.DataOutputStream;
-        import java.io.File;
-        import java.io.FileInputStream;
-        import java.io.FileOutputStream;
-        import java.io.IOException;
-        import java.io.ObjectInputStream;
-        import java.io.ObjectOutputStream;
-        import java.io.UnsupportedEncodingException;
-        import java.util.ArrayList;
+import Ejercicio0.Persona;
 
-public class main {
+import java.io.*;
+import java.util.*;
+
+public class PR131escriu {
     public static void main(String[] args) {
-        ArrayList<Persona> personas = new ArrayList<>();
-        personas.add(new Persona("Nerea", 22));
-        personas.add(new Persona("Paco",  25));
-        personas.add(new Persona("Fuengi", 21));
-        personas.add(new Persona("Diosito",  20));
-        personas.add(new Persona("xPeke",  25));
+        HashMap<String, Integer> hash = new HashMap<>();
+        hash.put("Ivan",20);
+        hash.put("Nerea",23);
+        hash.put("Juan",42);
+        hash.put("Pakito",1);
+        PR131HashMap hashmap = new PR131HashMap(hash);
 
-        String path = "./src/Ejercicio0/DataOutIn.dat";
+        String path = "./src/Ejercicio1/PR131HashMapData.ser";
 
 
         File file = new File(path);
 
         FileOutputStream fos = null;
         DataOutputStream dos = null;
-        for (int i = 0; i < personas.size(); i++) {
 
-        }
         try {
 
             fos=new FileOutputStream(file);
             dos=new DataOutputStream(fos);
-            writeSerializableObject(personas.get(0), dos);
-            writeSerializableObject(personas.get(1), dos);
-            writeSerializableObject(personas.get(2), dos);
-            writeSerializableObject(personas.get(3), dos);
-            writeSerializableObject(personas.get(4), dos);
+            writeSerializableObject(hashmap, dos);
             dos.flush();
         } catch (IOException e) { e.printStackTrace();
         } finally {
@@ -59,10 +45,6 @@ public class main {
             fis = new FileInputStream(file);
             dis = new DataInputStream(fis);
 
-            System.out.println(readSerializableObject(dis).toString());
-            System.out.println(readSerializableObject(dis).toString());
-            System.out.println(readSerializableObject(dis).toString());
-            System.out.println(readSerializableObject(dis).toString());
             System.out.println(readSerializableObject(dis).toString());
         } catch (IOException e) {
             e.printStackTrace();
@@ -125,4 +107,5 @@ public class main {
         } catch (IOException e) { e.printStackTrace(); }
         return new java.lang.AbstractMethodError();
     }
+
 }
