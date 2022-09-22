@@ -1,3 +1,4 @@
+package Ejercicio0;
 
 public class Main {
 

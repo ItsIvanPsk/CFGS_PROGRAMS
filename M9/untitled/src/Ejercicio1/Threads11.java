@@ -1,3 +1,4 @@
+package Ejercicio1;
 public class Threads11 implements Runnable{
     private static int contador = 0;
 

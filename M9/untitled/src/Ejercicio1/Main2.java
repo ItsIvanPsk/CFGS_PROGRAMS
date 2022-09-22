@@ -1,3 +1,4 @@
+package Ejercicio1;
 public class Main2 extends Thread {
 
     public static void main(String[] args) {
