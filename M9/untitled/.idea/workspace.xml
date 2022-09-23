@@ -1,16 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="94756eaf-c257-4225-be58-4896d1b3d456" name="Changes" comment="Commit Ej1 Solved">
+    <list default="true" id="94756eaf-c257-4225-be58-4896d1b3d456" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../CFGS_PROGRAMS/M6/Practica2_Serialized/src/Ejercicio0/main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ejercicio0/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ejercicio0/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ejercicio0/SelfRun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ejercicio0/SelfRun.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ejercicio0/Threads10.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ejercicio0/Threads10.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ejercicio1/Main2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ejercicio1/Main2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ejercicio1/Threads11.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ejercicio1/Threads11.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ejercicio1/Threads11_Compartida.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ejercicio1/Threads11_Compartida.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ejercicio2/Main3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ejercicio2/Main3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ejercicio2/Threads3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ejercicio2/Threads3.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,6 +98,14 @@
       <workItem from="1663080504731" duration="4230000" />
       <workItem from="1663685242393" duration="2737000" />
     </task>
+    <task id="LOCAL-00001" summary="Commit Ej1 Solved">
+      <created>1663853555328</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1663853555328</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,6 +121,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Commit Ej1 Solved" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit Ej1 Solved" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
