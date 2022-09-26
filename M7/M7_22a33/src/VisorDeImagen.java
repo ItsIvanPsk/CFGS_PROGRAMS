@@ -1,17 +1,14 @@
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JMenu;
-import javax.swing.JMenuBar;
-import javax.swing.JMenuItem;
-import javax.swing.JPanel;
+import javax.swing.*;
 import javax.swing.border.Border;
 import javax.swing.plaf.BorderUIResource;
 
 public class VisorDeImagen {
 
+    JLabel etiquetaEstado;
+    JLabel etiquetaNombreDeArchivo;
     public static void main(String[] args) {
         VisorDeImagen visorDeImagen = new VisorDeImagen();
     }
@@ -24,16 +21,18 @@ public class VisorDeImagen {
 
         Container panelContenedor = ventana.getContentPane();
         panelContenedor  =  ventana.getContentPane();
+
         panelContenedor.setLayout(new BorderLayout());
 
         Container panelDeImagen = new JPanel();
         panelContenedor.add(panelDeImagen, BorderLayout.CENTER);
 
-        JLabel etiquetaNombreDeArchivo = new JLabel("JLabel - 1");
+        etiquetaNombreDeArchivo = new JLabel("JLabel - 1");
         panelContenedor.add(etiquetaNombreDeArchivo, BorderLayout.NORTH);
 
-        JLabel etiquetaEstado  =  new  JLabel("JLabel - 2");
+        etiquetaEstado  =  new  JLabel("JLabel - 2");
         panelContenedor.add(etiquetaEstado, BorderLayout.SOUTH);
+
 
         BarraDeMenu(ventana);
         ventana.pack();
@@ -52,6 +51,15 @@ public class VisorDeImagen {
         menuArchivo.add(elementoGrabar);
         JMenuItem elementoSalir = new JMenuItem("Salir");
         menuArchivo.add(elementoSalir);
+
+        JMenu menuFiltro = new JMenu("Filtro");
+        barraDeMenu.add(menuFiltro);
+        JMenuItem elementoOscuro = new JMenuItem("Oscuro");
+        menuArchivo.add(elementoOscuro);
+        JMenuItem elementoUmbral = new JMenuItem("Umbral");
+        menuArchivo.add(elementoUmbral);
+
+
         JMenu menuAyuda = new JMenu("Ayuda");
         barraDeMenu.add(menuAyuda);
         JMenuItem elementoAcercaDe = new JMenuItem("Acerca del Visor de Imagenes");
@@ -82,5 +90,36 @@ public class VisorDeImagen {
     }
     private void acercaDe() {
         System.out.println("Ayuda");
+        JOptionPane.showMessageDialog(null, "Ayuda!");
     }
+    private void aplicarOscuro()
+    {
+        System.out.println("Oscuro.");
+        /*
+        if (imagenActual != null)
+        {
+            imagenActual.oscuro();
+            vetana.repaint();
+            mostrarEstado("Filtro aplicado: Oscuro");
+        }
+        else {
+            mostrarEstado("No hay ninguna imagen cargada");
+        }
+         */
+
+    }
+    private void aplicarClaro()
+    {
+        System.out.println("Claro.");
+    }
+    private void aplicarUmbral()
+    {
+        System.out.println("Umbral.");
+    }
+    private void mostrarEstado(String str)
+    {
+        etiquetaEstado.setText(str);
+    }
+
+
 }
