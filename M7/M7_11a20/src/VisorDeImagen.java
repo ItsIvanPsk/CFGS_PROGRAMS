@@ -29,6 +29,12 @@ public class VisorDeImagen {
         Container panelDeImagen = new JPanel();
         panelContenedor.add(panelDeImagen, BorderLayout.CENTER);
 
+        JLabel etiquetaNombreDeArchivo = new JLabel("JLabel - 1");
+        panelContenedor.add(etiquetaNombreDeArchivo, BorderLayout.NORTH);
+
+        JLabel etiquetaEstado  =  new  JLabel("JLabel - 2");
+        panelContenedor.add(etiquetaEstado, BorderLayout.SOUTH);
+
         BarraDeMenu(ventana);
         ventana.pack();
         ventana.setSize(400, 400);

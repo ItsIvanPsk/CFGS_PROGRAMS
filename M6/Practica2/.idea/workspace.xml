@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="21b26b8d-e25d-4dce-9390-2a75639f5eb4" name="Changes" comment="" />
+    <list default="true" id="21b26b8d-e25d-4dce-9390-2a75639f5eb4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../CFGS_PROGRAMS/M9/untitled/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CFGS_PROGRAMS/M9/untitled/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../M9/untitled/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../M9/untitled/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../M9/untitled/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../M9/untitled/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,15 +31,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/ivanf/Documents/CFGS_PROGRAMS/CFGS_PROGRAMS/M7/M7_1a10",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ivanf/Documents/CFGS_PROGRAMS/CFGS_PROGRAMS/M7/M7_1a10&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.PR126llegir">
     <configuration name="PR123escriu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="PR123escriu" />
@@ -91,6 +96,7 @@
       <updated>1663249542823</updated>
       <workItem from="1663249543985" duration="7648000" />
       <workItem from="1663335201114" duration="287000" />
+      <workItem from="1664184215344" duration="123000" />
     </task>
     <servers />
   </component>
