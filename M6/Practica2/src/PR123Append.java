@@ -6,7 +6,7 @@ public class PR123Append {
         String[] frases = { "Yo sólo puedo mostrarte la puerta", "Tú eres quien la tiene que atravesar" };
 
         try {
-            FileWriter file = new FileWriter("./src/frasesMatrix/frases.txt", true);
+            FileWriter file = new FileWriter("./frasesMatrix/frases.txt", true);
             file.write("");
             for (String linea : frases) {
                 file.write(linea + "\n");

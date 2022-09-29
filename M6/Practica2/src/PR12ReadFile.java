@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class PR12ReadFile {
     public static void main(String[] args) {
         int rowNum = 1;
-        File text = new File("./src/PR12ReadFile.java");
+        File text = new File("./PR12ReadFile.java");
         Scanner sc;
         try {
             sc = new Scanner(text);
