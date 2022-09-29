@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9f6cd0f0-33c9-4550-a42a-767c4b7ceff0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../PR140Persona.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practica4/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practica4/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practica4/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practica4/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practica4/out/production/Practica4/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practica4/out/production/Practica4/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practica4/out/production/Practica4/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practica4/out/production/Practica4/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practica4/out/production/Practica4/Practica4.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practica2_SerializedDataOutIn.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practica2_SerializedPR131HashMapData.ser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practica2_Serializedmain.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2F7qn3XZvGg1p4BuHn2221UWdGH" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/ivanf/Documents/CFGS_PROGRAMS/M6/Practica4",
+    "nodejs_package_manager_path": "npm"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="Ejercicio3" />
+      <recent name="Ejercicio0" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ivanf\Documents\CFGS_PROGRAMS\CFGS_PROGRAMS\M6\Practica2_Serialized\src\Ejercicio4" />
+      <recent name="C:\Users\ivanf\Documents\CFGS_PROGRAMS\CFGS_PROGRAMS\M6\Practica2_Serialized\src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.main">
+    <configuration name="PR131llegir" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Ejercicio1.PR131llegir" />
+      <module name="Practica2_Serialized" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Ejercicio1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PR132Persona" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Ejercicio2.PR132Persona" />
+      <module name="Practica2_Serialized" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Ejercicio2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PR133Treballadors" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Ejercicio3.PR133Treballadors" />
+      <module name="Practica2_Serialized" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Ejercicio3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PR134Dades" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Ejercicio4.PR134Dades" />
+      <module name="Practica2_Serialized" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Ejercicio4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Ejercicio0.main" />
+      <module name="Practica2_Serialized" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Ejercicio0.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.main" />
+        <item itemvalue="Application.PR134Dades" />
+        <item itemvalue="Application.PR133Treballadors" />
+        <item itemvalue="Application.PR132Persona" />
+        <item itemvalue="Application.PR131llegir" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9f6cd0f0-33c9-4550-a42a-767c4b7ceff0" name="Changes" comment="" />
+      <created>1663853633579</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1663853633579</updated>
+      <workItem from="1663853634811" duration="8353000" />
+      <workItem from="1663941886065" duration="250000" />
+      <workItem from="1663942141779" duration="825000" />
+      <workItem from="1664461132652" duration="185000" />
+      <workItem from="1664461545470" duration="66000" />
+      <workItem from="1664461679316" duration="1567000" />
+      <workItem from="1664463991073" duration="806000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
