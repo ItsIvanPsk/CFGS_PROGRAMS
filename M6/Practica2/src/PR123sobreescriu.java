@@ -6,7 +6,7 @@ public class PR123sobreescriu {
         String[] frases = { "Yo sólo puedo mostrarte la puerta", "Tú eres quien la tiene que atravesar" };
 
         try {
-            FileWriter file = new FileWriter("./src/frasesMatrix/frases.txt");
+            FileWriter file = new FileWriter("./frasesMatrix/frases.txt",false);
             for (String linea : frases) {
                 file.write(linea + "\n");
             }

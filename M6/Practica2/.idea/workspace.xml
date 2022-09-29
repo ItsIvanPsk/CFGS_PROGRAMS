@@ -2,10 +2,57 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21b26b8d-e25d-4dce-9390-2a75639f5eb4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../CFGS_PROGRAMS/M9/untitled/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CFGS_PROGRAMS/M9/untitled/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M9/untitled/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../M9/untitled/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M9/untitled/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../M9/untitled/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practica1/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practica1/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practica1/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practica1/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practica1/Practica1_Ejercio1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practica1/out/production/Practica1_Ejercio1/Agenda.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practica1/out/production/Practica1_Ejercio1/Agenda2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practica1/out/production/Practica1_Ejercio1/ShopMenu.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practica1/src/Agenda.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practica1/src/Agenda2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practica1/src/ShopMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practica1_Ejercio1/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practica1_Ejercio1/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practica1_Ejercio1/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practica1_Ejercio1/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practica1_Ejercio1/Practica1_Ejercio1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practica1_Ejercio1/Practica1_Ejercio1/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practica1_Ejercio1/Practica1_Ejercio1/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practica1_Ejercio1/Practica1_Ejercio1/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practica1_Ejercio1/Practica1_Ejercio1/Practica1_Ejercio1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practica1_Ejercio1/Practica1_Ejercio1/out/production/Practica1_Ejercio1/Agenda.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practica1_Ejercio1/Practica1_Ejercio1/out/production/Practica1_Ejercio1/ShopMenu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practica1_Ejercio1/Practica1_Ejercio1/src/Agenda.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practica1_Ejercio1/Practica1_Ejercio1/src/ShopMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practica1_Ejercio1/out/production/Practica1_Ejercio1/Agenda.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practica1_Ejercio1/out/production/Practica1_Ejercio1/Agenda2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practica1_Ejercio1/out/production/Practica1_Ejercio1/ShopMenu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practica1_Ejercio1/src/Agenda.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practica1_Ejercio1/src/Agenda2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practica1_Ejercio1/src/ShopMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Practica2/PR121Files.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practica2/PR121Files.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Practica2/PR122cat.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practica2/PR122cat.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Practica2/PR123Append.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practica2/PR123Append.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Practica2/PR123escriu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practica2/PR123escriu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Practica2/PR123sobreescriu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practica2/PR123sobreescriu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Practica2/PR126llegir.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Practica2/PR12ReadFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practica2/PR12ReadFile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Practica2/frasesMatrix/frases.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practica2/frasesMatrix/frases.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PR121Files.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PR121Files.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PR122cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PR122cat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PR123Append.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PR123Append.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PR123escriu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PR123escriu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PR123reinicia.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PR123sobreescriu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PR123sobreescriu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PR124linies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PR124linies.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PR126llegir.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PR12ReadFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PR12ReadFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/files/files/file1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frasesMatrix/frases.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/frasesMatrix/frases.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/numeros.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/numeros.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +67,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/../.." value="M9_SynchronizeThreads" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -40,7 +92,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.PR126llegir">
+  <component name="RunManager" selected="Application.PR123sobreescriu">
     <configuration name="PR123escriu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="PR123escriu" />
       <module name="Practica2" />
@@ -48,8 +100,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PR123reinicia" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="PR123reinicia" />
+    <configuration name="PR123sobreescriu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PR123sobreescriu" />
       <module name="Practica2" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -78,11 +130,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PR123sobreescriu" />
         <item itemvalue="Application.PR126llegir" />
         <item itemvalue="Application.PR123escriu" />
         <item itemvalue="Application.PR125cp" />
         <item itemvalue="Application.PR124linies" />
-        <item itemvalue="Application.PR123reinicia" />
       </list>
     </recent_temporary>
   </component>
@@ -97,6 +149,7 @@
       <workItem from="1663249543985" duration="7648000" />
       <workItem from="1663335201114" duration="287000" />
       <workItem from="1664184215344" duration="123000" />
+      <workItem from="1664458865302" duration="1092000" />
     </task>
     <servers />
   </component>

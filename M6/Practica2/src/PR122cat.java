@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class PR122cat {
     public static void main(String[] args) {
         PR122cat pr = new PR122cat();
-        File text = new File("./src/PR12ReadFile.java");
+        File text = new File("./PR12ReadFile.java");
         Scanner sc = new Scanner(System.in);
         System.out.print("Path: ");
         while (!sc.hasNext()) {
