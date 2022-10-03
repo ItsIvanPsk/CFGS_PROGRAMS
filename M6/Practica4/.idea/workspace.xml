@@ -2,17 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3d54302d-ecc1-4d0f-a653-7aa26519fb87" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../PR140Persona.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PR140Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PR140Persona.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PR140Persones.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PR141Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practica2_SerializedDataOutIn.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practica2_SerializedPR131HashMapData.ser" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practica2_Serializedmain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PR141Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PR141Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../M7/M7_11a21.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../M7/M7_22a33.7z" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../M7/factura_JBL_TWS300.pdf" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +37,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/ivanf/Documents/CFGS_PROGRAMS/M7/M7_34a42",
     "nodejs_package_manager_path": "npm"
   }
 }]]></component>
@@ -77,6 +72,8 @@
       <option name="presentableId" value="Default" />
       <updated>1664466940671</updated>
       <workItem from="1664466941878" duration="1801000" />
+      <workItem from="1664624447533" duration="239000" />
+      <workItem from="1664811313657" duration="210000" />
     </task>
     <servers />
   </component>

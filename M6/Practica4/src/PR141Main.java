@@ -16,9 +16,7 @@ public class PR141Main {
             fis = new FileInputStream(file);
             dis = new DataInputStream(fis);
 
-
             System.out.println(readSerializableObject(dis));
-
 
         } catch (IOException e) {
             e.printStackTrace();
