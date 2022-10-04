@@ -3,7 +3,7 @@ import java.util.concurrent.Future;
 
 public class PR231Main {
     public static void main(String args[]) {
-        PR230Calcula obj = new PR230Calcula();
+        PR231Calcula obj = new PR231Calcula();
         Future<String> f0 = obj.calculate("hola");
         Future<String> f1 = obj.calculate("adios");
         Future<String> f2 = obj.calculate("muy");

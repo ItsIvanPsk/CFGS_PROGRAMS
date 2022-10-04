@@ -2,19 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1db2c4b3-3783-4c40-9296-89c2990beb31" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../M6/Practica4/PR141Persones.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../M6/Practica4/src/PR141Persones.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Practica3.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PR230Calcula.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PR230Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PR231Calcula.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PR231Main.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/PR232Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PR233Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PR231Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PR231Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +44,7 @@
     "WebServerToolWindowFactoryState": "false"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.PR233Main">
     <configuration name="PR230Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="PR230Main" />
       <module name="Practica3" />
@@ -61,8 +52,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PR232Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PR232Main" />
+      <module name="Practica3" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PR232Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PR232Main" />
+      <module name="Practica3" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PR233Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PR233Main" />
+      <module name="Practica3" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PR233Main" />
+        <item itemvalue="Application.PR232Main" />
+        <item itemvalue="Application.PR232Main (1)" />
         <item itemvalue="Application.PR230Main" />
       </list>
     </recent_temporary>
@@ -75,11 +90,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1664894041414</updated>
-      <workItem from="1664894042669" duration="2801000" />
+      <workItem from="1664894042669" duration="5225000" />
     </task>
+    <task id="LOCAL-00001" summary="M9_Futurs FirstCommit - PR230..PR231">
+      <created>1664898358026</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1664898358026</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="M9_Futurs FirstCommit - PR230..PR231" />
+    <option name="LAST_COMMIT_MESSAGE" value="M9_Futurs FirstCommit - PR230..PR231" />
   </component>
 </project>
