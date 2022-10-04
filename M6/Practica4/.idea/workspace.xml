@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3d54302d-ecc1-4d0f-a653-7aa26519fb87" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PR141Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PR141Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M7/M7_11a21.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M7/M7_22a33.7z" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M7/factura_JBL_TWS300.pdf" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,15 +28,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/ivanf/Documents/CFGS_PROGRAMS/M7/M7_34a42",
-    "nodejs_package_manager_path": "npm"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ivanf/Documents/CFGS_PROGRAMS/M7/M7_34a42&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.PR141Main">
     <configuration name="PR140Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="PR140Main" />
@@ -74,6 +70,7 @@
       <workItem from="1664466941878" duration="1801000" />
       <workItem from="1664624447533" duration="239000" />
       <workItem from="1664811313657" duration="210000" />
+      <workItem from="1664811534488" duration="455000" />
     </task>
     <servers />
   </component>
