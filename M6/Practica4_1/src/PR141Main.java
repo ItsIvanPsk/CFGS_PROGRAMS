@@ -22,7 +22,7 @@ public class PR141Main {
         ArrayList<PR140Persona> personas = new ArrayList<>();
 
         String path = "./PR140Persones.dat";
-        String pathOut = "./<PR141Persones.xml";
+        String pathOut = "./PR141Persones.xml";
 
         File file = new File(path);
 
@@ -57,11 +57,15 @@ public class PR141Main {
                 elmCognom.appendChild(doc.createTextNode(obj.getSurname()));
                 elmPersona.appendChild(elmCognom);
 
+                Element elmCiutat = doc.createElement("ciutat");
+                elmCiutat.appendChild(doc.createTextNode(obj.getCity()));
+                elmPersona.appendChild(elmCiutat);
+
                 Attr attrEdat = doc.createAttribute("edat");
                 attrEdat.setValue(Integer.toString(obj.getAge()));
                 elmPersona.setAttributeNode(attrEdat);
 
-
+                elmRoot.appendChild(elmPersona);
                 // Guardar l'arxiu XML
                 TransformerFactory transformerFactory = TransformerFactory.newInstance();
                 Transformer transformer = transformerFactory.newTransformer();
