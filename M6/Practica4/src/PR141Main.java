@@ -1,7 +1,4 @@
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.ObjectInputStream;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -43,7 +40,7 @@ public class PR141Main {
             DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
             DocumentBuilder db = dbf.newDocumentBuilder();
             Document doc = db.newDocument();
-        
+
             Element elmRoot = doc.createElement("persones");
             doc.appendChild(elmRoot);
 
@@ -64,12 +61,8 @@ public class PR141Main {
                 attrEdat.setValue(Integer.toString(obj.getAge()));
                 elmPersona.setAttributeNode(attrEdat);
 
-                Element elmCiutat = doc.createElement("ciutat");
-                elmCiutat.appendChild(doc.createTextNode(obj.getCity()));
-                elmPersona.appendChild(elmCiutat);
 
-                elmRoot.appendChild(elmPersona);
-            }
+            System.out.println(readSerializableObject(dis));
 
             // Guardar l'arxiu XML
             TransformerFactory transformerFactory = TransformerFactory.newInstance();

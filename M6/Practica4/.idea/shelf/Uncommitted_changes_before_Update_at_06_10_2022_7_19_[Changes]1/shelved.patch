@@ -1,0 +1,202 @@
+Index: src/PR140Persona.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/PR140Persona.java b/src/PR140Persona.java
+--- a/src/PR140Persona.java	
++++ b/src/PR140Persona.java	
+@@ -1,4 +1,5 @@
+ import java.io.Serializable;
++import java.util.ArrayList;
+ 
+ public class PR140Persona implements Serializable {
+     private String name;
+@@ -26,7 +27,6 @@
+     public String getName() {
+         return name;
+     }
+-
+     public String getSurname() {
+         return surname;
+     }
+Index: src/PR140Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/PR140Main.java b/src/PR140Main.java
+--- a/src/PR140Main.java	
++++ b/src/PR140Main.java	
+@@ -2,14 +2,16 @@
+ import java.util.ArrayList;
+ 
+ public class PR140Main {
+-    public static void main(String[] args) {
+-
+-        ArrayList<PR140Persona> personas = new ArrayList<>();
++    ArrayList<PR140Persona> personas = new ArrayList<>();
++    public static void main(String[] args) {
++
++        PR140Main pr = new PR140Main();
+ 
+-        personas.add(new PR140Persona("Maria", "Lopez", 36, "Barcelona"));
+-        personas.add(new PR140Persona("Gustavo", "Catadasús", 15, "Londres"));
+-        personas.add(new PR140Persona("Irene", "Rocheford", 45, "Tokio"));
+-        personas.add(new PR140Persona("Armengol", "Pastor", 72, "Abidjan"));
++
++        pr.getPersonas().add(new PR140Persona("Maria", "Lopez", 36, "Barcelona"));
++        pr.getPersonas().add(new PR140Persona("Gustavo", "Catadasús", 15, "Londres"));
++        pr.getPersonas().add(new PR140Persona("Irene", "Rocheford", 45, "Tokio"));
++        pr.getPersonas().add(new PR140Persona("Armengol", "Pastor", 72, "Abidjan"));
+ 
+         String path = "./PR140Persones.dat";
+ 
+@@ -23,10 +25,10 @@
+             fos=new FileOutputStream(file);
+             dos=new DataOutputStream(fos);
+ 
+-            writeSerializableObject(personas, dos);
++            writeSerializableObject(pr.getPersonas(), dos);
+ 
+             dos.flush();
+-            System.out.println(personas.toString());
++            System.out.println(pr.getPersonas().toString());
+         } catch (IOException e) { e.printStackTrace();
+         } finally {
+             try {
+@@ -62,4 +64,8 @@
+             dos.write(data);
+         } catch (IOException e) { e.printStackTrace(); }
+     }
++
++    public ArrayList<PR140Persona> getPersonas(){
++        return this.personas;
++    }
+ }
+\ No newline at end of file
+Index: src/PR141Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/PR141Main.java b/src/PR141Main.java
+--- a/src/PR141Main.java	
++++ b/src/PR141Main.java	
+@@ -1,4 +1,9 @@
++import org.w3c.dom.Document;
++
++import javax.xml.parsers.DocumentBuilder;
++import javax.xml.parsers.DocumentBuilderFactory;
+ import java.io.*;
++import java.lang.reflect.Array;
+ import java.util.ArrayList;
+ 
+ public class PR141Main {
+@@ -16,8 +21,7 @@
+             fis = new FileInputStream(file);
+             dis = new DataInputStream(fis);
+ 
+-
+-            System.out.println(readSerializableObject(dis));
++            System.out.println(readSerializableObject());
+ 
+ 
+         } catch (IOException e) {
+@@ -32,19 +36,6 @@
+         }
+     }
+ 
+-    static byte[] serializableObjectToBytes (Object obj) {
+-        // Transforma l'objecte a bytes[]
+-        ByteArrayOutputStream bos = new ByteArrayOutputStream();
+-        ObjectOutputStream oos;
+-        try {
+-            oos = new ObjectOutputStream(bos);
+-            oos.writeObject(obj);
+-            oos.flush();
+-            return bos.toByteArray();
+-        } catch (IOException e) { e.printStackTrace(); }
+-        return null;
+-    }
+-
+     static Object bytesToSerializableObject (byte[] data) {
+         try {
+             ByteArrayInputStream in = new ByteArrayInputStream(data);
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -2,17 +2,10 @@
+ <project version="4">
+   <component name="ChangeListManager">
+     <list default="true" id="3d54302d-ecc1-4d0f-a653-7aa26519fb87" name="Changes" comment="">
+-      <change afterPath="$PROJECT_DIR$/../PR140Persona.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/PR140Main.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/PR140Persona.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/PR140Persones.dat" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/PR141Main.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../Practica2_SerializedDataOutIn.dat" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../Practica2_SerializedPR131HashMapData.ser" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/../Practica2_Serializedmain.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/PR140Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PR140Main.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/PR140Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PR140Persona.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/PR141Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PR141Main.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -38,14 +31,14 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "RunOnceActivity.OpenProjectViewOnStart": "true",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "WebServerToolWindowFactoryState": "false",
+-    "nodejs_package_manager_path": "npm"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
++    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="RunManager" selected="Application.PR141Main">
+     <configuration name="PR140Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+       <option name="MAIN_CLASS_NAME" value="PR140Main" />
+@@ -77,10 +70,23 @@
+       <option name="presentableId" value="Default" />
+       <updated>1664466940671</updated>
+       <workItem from="1664466941878" duration="1801000" />
++      <workItem from="1664624781780" duration="26000" />
++      <workItem from="1664625619136" duration="2957000" />
+     </task>
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+     <option name="version" value="3" />
+   </component>
++  <component name="Vcs.Log.Tabs.Properties">
++    <option name="TAB_STATES">
++      <map>
++        <entry key="MAIN">
++          <value>
++            <State />
++          </value>
++        </entry>
++      </map>
++    </option>
++  </component>
+ </project>
+\ No newline at end of file
