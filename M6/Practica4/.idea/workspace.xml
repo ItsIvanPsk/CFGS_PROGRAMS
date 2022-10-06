@@ -1,76 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3d54302d-ecc1-4d0f-a653-7aa26519fb87" name="Changes" comment="">
+    <list default="true" id="42056a0b-cced-4ab8-8b9d-7f96c993f41c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PR140Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PR140Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PR141Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PR141Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/../.." value="M9_Futuros" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2FRttlCrKxdpEhGcokFXFyv5mlF" />
+  <component name="ProjectId" id="2Fg5fIfNw6WA6765Dxrr6qbJslC" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/ivanf/Documents/CFGS_PROGRAMS/M7/M7_34a42&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/ivanf/Documents/CFGS_PROGRAMS/M6/Practica4"
   }
-}</component>
-  <component name="RunManager" selected="Application.PR141Main">
-    <configuration name="PR140Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="PR140Main" />
-      <module name="Practica4" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PR141Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="PR141Main" />
-      <module name="Practica4" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.PR141Main" />
-        <item itemvalue="Application.PR140Main" />
-      </list>
-    </recent_temporary>
-  </component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="3d54302d-ecc1-4d0f-a653-7aa26519fb87" name="Changes" comment="" />
-      <created>1664466940671</created>
+      <changelist id="42056a0b-cced-4ab8-8b9d-7f96c993f41c" name="Changes" comment="" />
+      <created>1664900988356</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1664466940671</updated>
-      <workItem from="1664466941878" duration="1801000" />
-      <workItem from="1664624447533" duration="239000" />
-      <workItem from="1664811313657" duration="210000" />
-      <workItem from="1664811534488" duration="455000" />
+      <updated>1664900988356</updated>
+      <workItem from="1664900989608" duration="293000" />
     </task>
     <servers />
   </component>

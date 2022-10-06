@@ -16,22 +16,22 @@ public class PR140Main {
         File file = new File(path);
 
         FileOutputStream fos = null;
-        DataOutputStream dos = null;
+        ObjectOutputStream oos = null;
 
         try {
 
             fos=new FileOutputStream(file);
-            dos=new DataOutputStream(fos);
+            oos=new ObjectOutputStream(fos);
+            oos.writeObject(personas.toArray(new PR140Persona[0]));
+            // writeSerializableObject(personas, oos);
 
-            writeSerializableObject(personas, dos);
-
-            dos.flush();
+            oos.flush();
             System.out.println(personas.toString());
         } catch (IOException e) { e.printStackTrace();
         } finally {
             try {
                 if(fos!=null){ fos.close(); }
-                if(dos!=null){ dos.close(); }
+                if(oos!=null){ oos.close(); }
             } catch (Exception e) {
                 e.printStackTrace();
             }
