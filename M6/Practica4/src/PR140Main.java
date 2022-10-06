@@ -23,11 +23,9 @@ public class PR140Main {
             fos=new FileOutputStream(file);
             oos=new ObjectOutputStream(fos);
             oos.writeObject(personas.toArray(new PR140Persona[0]));
-            // writeSerializableObject(personas, oos);
 
-            writeSerializableObject(personas, dos);
 
-            dos.flush();
+            oos.flush();
             System.out.println(personas.toString());
         } catch (IOException e) { e.printStackTrace();
         } finally {

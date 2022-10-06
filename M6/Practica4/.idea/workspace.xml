@@ -1,60 +1,139 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3d54302d-ecc1-4d0f-a653-7aa26519fb87" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_06_10_2022_7_19__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_06_10_2022_7_19__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_06_10_2022_7_19__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_06_10_2022_7_19__Changes_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practica4_1/src/PR141Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Practica4_1/src/PR141Main.java" afterDir="false" />
+    <list default="true" id="75cb4f95-9093-477f-b5d4-3809d65be660" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Practica2_Serialized/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practica2_Serialized/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practica2_Serialized/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practica2_Serialized/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practica2_Serialized/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practica2_Serialized/Practica2_Serialized.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practica2_Serialized/hashmap.ser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practica2_Serialized/out/production/Practica2_Serialized/Ejercicio0/DataOutIn.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practica2_Serialized/out/production/Practica2_Serialized/Ejercicio0/Persona.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practica2_Serialized/out/production/Practica2_Serialized/Ejercicio0/main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practica2_Serialized/out/production/Practica2_Serialized/Ejercicio1/PR131HashMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practica2_Serialized/out/production/Practica2_Serialized/Ejercicio1/PR131HashMapData.ser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practica2_Serialized/out/production/Practica2_Serialized/Ejercicio1/PR131escriu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practica2_Serialized/out/production/Practica2_Serialized/Ejercicio1/PR131llegir.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practica2_Serialized/out/production/Practica2_Serialized/Ejercicio2/PR132Persona.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practica2_Serialized/out/production/Practica2_Serialized/Ejercicio2/PR132people.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practica2_Serialized/out/production/Practica2_Serialized/Ejercicio3/PR133Treballadors.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practica2_Serialized/out/production/Practica2_Serialized/Ejercicio3/Treballador.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practica2_Serialized/out/production/Practica2_Serialized/Ejercicio3/employees.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practica2_Serialized/out/production/Practica2_Serialized/Ejercicio4/PR134Dades.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practica2_Serialized/out/production/Practica2_Serialized/Ejercicio4/employees.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practica2_Serialized/src/Ejercicio0/DataOutIn.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practica2_Serialized/src/Ejercicio0/Persona.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practica2_Serialized/src/Ejercicio0/main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practica2_Serialized/src/Ejercicio1/PR131HashMap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practica2_Serialized/src/Ejercicio1/PR131HashMapData.ser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practica2_Serialized/src/Ejercicio1/PR131escriu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practica2_Serialized/src/Ejercicio1/PR131llegir.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practica2_Serialized/src/Ejercicio2/PR132Persona.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practica2_Serialized/src/Ejercicio2/PR132people.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practica2_Serialized/src/Ejercicio3/PR133Treballadors.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practica2_Serialized/src/Ejercicio3/Treballador.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practica2_Serialized/src/Ejercicio3/employees.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practica2_Serialized/src/Ejercicio4/PR134Dades.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practica2_Serialized/src/Ejercicio4/employees.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practica3/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Practica3/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practica3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Practica3/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../M9/PR12_ivan_figueredo.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../M9/Practica3/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../M9/Practica3/.idea/shelf/Uncommitted_changes_before_Checkout_at_04_10_2022_16_39_[Changes]/PR141Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../M9/Practica3/.idea/shelf/Uncommitted_changes_before_Checkout_at_04_10_2022_16_39_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../M9/Practica3/.idea/shelf/Uncommitted_changes_before_Checkout_at_04_10_2022_16_39_[Changes]1/PR141Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../M9/Practica3/.idea/shelf/Uncommitted_changes_before_Checkout_at_04_10_2022_16_39_[Changes]1/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../M9/Practica3/.idea/shelf/Uncommitted_changes_before_Checkout_at_04_10_2022_16_39__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../M9/Practica3/.idea/shelf/Uncommitted_changes_before_Checkout_at_04_10_2022_16_39__Changes_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../M9/Practica3/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../M9/Practica3/out/production/Practica3/PR230Calcula.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../M9/Practica3/out/production/Practica3/PR230Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../M9/Practica3/out/production/Practica3/PR231Calcula.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../M9/Practica3/out/production/Practica3/PR231Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../M9/Practica3/out/production/Practica3/PR232Main$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../M9/Practica3/out/production/Practica3/PR232Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../M9/Practica3/out/production/Practica3/PR233Main$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../M9/Practica3/out/production/Practica3/PR233Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../file1" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$/../.." value="M9_Futuros" />
-      </map>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
     </option>
+  </component>
+  <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2Fg5fIfNw6WA6765Dxrr6qbJslC" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
+  <component name="ProjectId" id="2FlMkvA9x65t8MeuxoaKwXPDtSA" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/ivanf/Documents/CFGS_PROGRAMS/M6/Practica4_1",
-    "nodejs_package_manager_path": "npm"
+    "last_opened_file_path": "C:/Users/ivanf/Documents/CFGS_PROGRAMS/M6/Practica4_1"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.PR141Main">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ivanf\Documents\CFGS_PROGRAMS\M6\Practica4_1" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.PR143Main">
     <configuration name="PR140Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="PR140Main" />
-      <module name="Practica4" />
+      <module name="Practica4_1" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="PR141Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="PR141Main" />
-      <module name="Practica4" />
+      <module name="Practica4_1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PR142Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PR142Main" />
+      <module name="Practica4_1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PR143Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PR143Main" />
+      <module name="Practica4_1" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PR143Main" />
+        <item itemvalue="Application.PR142Main" />
         <item itemvalue="Application.PR141Main" />
         <item itemvalue="Application.PR140Main" />
       </list>
@@ -63,28 +142,29 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="3d54302d-ecc1-4d0f-a653-7aa26519fb87" name="Changes" comment="" />
-      <created>1664900988356</created>
+      <changelist id="75cb4f95-9093-477f-b5d4-3809d65be660" name="Changes" comment="" />
+      <created>1665062363530</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1664466940671</updated>
-      <workItem from="1664466941878" duration="1801000" />
-      <workItem from="1665062333627" duration="150000" />
+      <updated>1665062363530</updated>
+      <workItem from="1665062364846" duration="5293000" />
     </task>
+    <task id="LOCAL-00001" summary="M6_PR14_XML Release">
+      <created>1665067358519</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1665067358519</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="M6_PR14_XML Release" />
+    <option name="LAST_COMMIT_MESSAGE" value="M6_PR14_XML Release" />
   </component>
 </project>

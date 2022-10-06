@@ -18,11 +18,11 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
 public class PR141Main {
-    public static void main(String[] args) throws ClassNotFoundException {
+    public static void main(String[] args) throws ClassNotFoundException, FileNotFoundException {
         ArrayList<PR140Persona> personas = new ArrayList<>();
 
         String path = "./PR140Persones.dat";
-        String pathOut = "./<PR141Persones.xml";
+        String pathOut = "./PR141Persones.xml";
 
         File file = new File(path);
 
@@ -57,36 +57,40 @@ public class PR141Main {
                 elmCognom.appendChild(doc.createTextNode(obj.getSurname()));
                 elmPersona.appendChild(elmCognom);
 
+                Element elmCiutat = doc.createElement("ciutat");
+                elmCiutat.appendChild(doc.createTextNode(obj.getCity()));
+                elmPersona.appendChild(elmCiutat);
+
                 Attr attrEdat = doc.createAttribute("edat");
                 attrEdat.setValue(Integer.toString(obj.getAge()));
                 elmPersona.setAttributeNode(attrEdat);
 
-
-            System.out.println(readSerializableObject(dis));
-
-            // Guardar l'arxiu XML
-            TransformerFactory transformerFactory = TransformerFactory.newInstance();
-            Transformer transformer = <ransformerFactory.newTransformer();
-            transformer.setOutputProperty(OutputKeys.INDENT, "yes");
-            DOMSource source = new DOMSource(doc);
-            StreamResult result = new StreamResult(new File(pathOut));
-            transformer.transform(source, result);
-
-            System.out.println("Done");
-
+                elmRoot.appendChild(elmPersona);
+                // Guardar l'arxiu XML
+                TransformerFactory transformerFactory = TransformerFactory.newInstance();
+                Transformer transformer = transformerFactory.newTransformer();
+                transformer.setOutputProperty(OutputKeys.INDENT, "yes");
+                DOMSource source = new DOMSource(doc);
+                StreamResult result = new StreamResult(new File(pathOut));
+                transformer.transform(source, result);
+                System.out.println("Done");
+            }
         } catch (IOException e) {
             e.printStackTrace();
+        } catch (ParserConfigurationException e) {
+            throw new RuntimeException(e);
+        } catch (TransformerException e) {
+            throw new RuntimeException(e);
         }
         finally {
-            try {
-                if(fis!=null){ fis.close(); }
-                if(ois!=null){ ois.close(); }
-            } catch (Exception e) {
-                e.printStackTrace();
+                try {
+                    if(fis!=null){ fis.close(); }
+                    if(ois!=null){ ois.close(); }
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
             }
         }
-    }
-
     static byte[] serializableObjectToBytes (Object obj) {
         // Transforma l'objecte a bytes[]
         ByteArrayOutputStream bos = new ByteArrayOutputStream();
