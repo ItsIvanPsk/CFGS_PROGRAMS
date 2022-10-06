@@ -1,3 +1,5 @@
+package Ejercicio3;
+
 public class Treballador {
     private int ID;
     private String name;

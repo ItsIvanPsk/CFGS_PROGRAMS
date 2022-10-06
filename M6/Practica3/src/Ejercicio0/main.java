@@ -1,7 +1,17 @@
 package Ejercicio0;
 
-import java.io.*;
-import java.util.ArrayList;
+        import java.io.ByteArrayInputStream;
+        import java.io.ByteArrayOutputStream;
+        import java.io.DataInputStream;
+        import java.io.DataOutputStream;
+        import java.io.File;
+        import java.io.FileInputStream;
+        import java.io.FileOutputStream;
+        import java.io.IOException;
+        import java.io.ObjectInputStream;
+        import java.io.ObjectOutputStream;
+        import java.io.UnsupportedEncodingException;
+        import java.util.ArrayList;
 
 public class main {
     public static void main(String[] args) {
@@ -12,7 +22,7 @@ public class main {
         personas.add(new Persona("Diosito",  20));
         personas.add(new Persona("xPeke",  25));
 
-        String path = "./DataOutIn.dat";
+        String path = "./src/Ejercicio0/DataOutIn.dat";
 
         File file = new File(path);
 
@@ -113,29 +123,5 @@ public class main {
         } catch (UnsupportedEncodingException e) { e.printStackTrace();
         } catch (IOException e) { e.printStackTrace(); }
         return new java.lang.AbstractMethodError();
-    }
-}
-
-class Persona implements Serializable {
-    private String name;
-    private int age;
-    public Persona(String name, int age){
-        this.name = name;
-        this.age = age;
-    }
-
-    public String getName(){
-        return this.name;
-    }
-    public int getAge(){
-        return this.age;
-    }
-
-    @Override
-    public String toString() {
-        return "Persona{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                '}';
     }
 }

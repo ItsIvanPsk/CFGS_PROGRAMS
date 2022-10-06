@@ -1,3 +1,7 @@
+package Ejercicio2;
+
+import Ejercicio0.Persona;
+
 import java.io.*;
 import java.util.ArrayList;
 
@@ -29,7 +33,7 @@ public class PR132Persona implements Serializable {
         PR132Persona persona2 = new PR132Persona("Irene", "Sales", 54);
 
 
-        String path = "./PR132people.dat";
+        String path = "./src/Ejercicio2/PR132people.dat";
 
         File file = new File(path);
 
@@ -134,27 +138,4 @@ public class PR132Persona implements Serializable {
         return new java.lang.AbstractMethodError();
     }
 
-    class Persona implements Serializable {
-        private String name;
-        private int age;
-        public Persona(String name, int age){
-            this.name = name;
-            this.age = age;
-        }
-
-        public String getName(){
-            return this.name;
-        }
-        public int getAge(){
-            return this.age;
-        }
-
-        @Override
-        public String toString() {
-            return "Persona{" +
-                    "name='" + name + '\'' +
-                    ", age=" + age +
-                    '}';
-        }
-    }
 }

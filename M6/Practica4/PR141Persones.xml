@@ -1,1 +1,23 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><concesionario><coche id="1"><marca>Renault</marca><modelo>Megano</modelo><cilindrada>1.5</cilindrada></coche></concesionario>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<persones>
+    <persona edat="36">
+        <nom>Maria</nom>
+        <cognom>Lopez</cognom>
+        <ciutat>Barcelona</ciutat>
+    </persona>
+    <persona edat="15">
+        <nom>Gustavo</nom>
+        <cognom>Catadasús</cognom>
+        <ciutat>Londres</ciutat>
+    </persona>
+    <persona edat="45">
+        <nom>Irene</nom>
+        <cognom>Rocheford</cognom>
+        <ciutat>Tokio</ciutat>
+    </persona>
+    <persona edat="72">
+        <nom>Armengol</nom>
+        <cognom>Pastor</cognom>
+        <ciutat>Abidjan</ciutat>
+    </persona>
+</persones>

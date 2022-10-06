@@ -1,3 +1,7 @@
+package Ejercicio3;
+
+import Ejercicio0.Persona;
+
 import java.io.File;
 import java.io.IOException;
 import java.nio.charset.Charset;
@@ -18,7 +22,7 @@ public class PR133Treballadors {
         treballadors.add(new Treballador(3,"Diosito",  "Lopez",5, 2000.0f));
         treballadors.add(new Treballador(4,"xPeke",  "Lopez",25, 2000.0f));
 
-        String path = "./employees.csv";
+        String path = "./src/Ejercicio3/employees.csv";
         Scanner sc = new Scanner(System.in);
         File file = new File(path);
 

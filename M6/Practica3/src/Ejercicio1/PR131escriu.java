@@ -1,3 +1,5 @@
+package Ejercicio1;
+
 import java.io.*;
 import java.util.*;
 
@@ -10,7 +12,7 @@ public class PR131escriu {
         hash.put("Pakito",1);
         PR131HashMap hashmap = new PR131HashMap(hash);
 
-        String path = "./PR131HashMapData.ser";
+        String path = "./src/Ejercicio1/PR131HashMapData.ser";
 
         File file = new File(path);
 
