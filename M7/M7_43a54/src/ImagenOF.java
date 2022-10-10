@@ -6,8 +6,12 @@ public class ImagenOF extends BufferedImage
 {
     public ImagenOF(BufferedImage image)
     {
-        super(image.getColorModel(), image.copyData(null),
-                image.isAlphaPremultiplied(), null);
+        super(
+                image.getColorModel(),
+                image.copyData(null),
+                image.isAlphaPremultiplied(),
+                null
+        );
     }
     public ImagenOF(int width, int height)
     {
