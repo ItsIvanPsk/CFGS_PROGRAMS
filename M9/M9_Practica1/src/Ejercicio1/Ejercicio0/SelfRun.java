@@ -1,4 +1,4 @@
-package Ejercicio0;
+package Ejercicio1.Ejercicio0;
 
 public class SelfRun implements Runnable{
     private Thread internalThread;

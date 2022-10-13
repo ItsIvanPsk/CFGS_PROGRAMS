@@ -1,4 +1,4 @@
-package Ejercicio0;
+package Ejercicio1.Ejercicio0;
 public class Threads10 implements Runnable{
     private int numThread;
 
