@@ -1,6 +1,10 @@
 import java.io.BufferedReader;
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 import java.net.InetSocketAddress;
 import java.net.UnknownHostException;
 import java.nio.ByteBuffer;
@@ -63,6 +67,9 @@ public class PR314Servidor extends WebSocketServer {
 
         while (running) {
             String line = in.readLine();
+            if(line.contains("saludo")){
+                
+            }
             socket.broadcast(line);
             if (line.equals("exit")) {
                 running = false;
@@ -75,9 +82,6 @@ public class PR314Servidor extends WebSocketServer {
 
     public void enviaPersona(WebSocket conn, String name,int edad){
         new PR314Persona("Ivan", 10);
-        byte[] msg = new byte[msg_size];
-        
-        // broadcast();
     }
 
 
@@ -114,7 +118,12 @@ public class PR314Servidor extends WebSocketServer {
         System.out.println(conn + " s'ha desconnectat");
     }
 
+    
     @Override
+    public void onMessage(WebSocket conn, ByteBuffer message) {
+        broadcast(bytesToObject(message).toString());
+    }
+
     public void onMessage(WebSocket conn, String message) {
 
         if (message.equalsIgnoreCase("list")) {
@@ -127,7 +136,8 @@ public class PR314Servidor extends WebSocketServer {
             }
             conn.send(strList);
 
-        } else if (message.contains("to(")) {
+        }
+        else if (message.contains("to(")) {
             // Missatge privat
         
             // Trobar el client amb aquest identificador
@@ -162,8 +172,7 @@ public class PR314Servidor extends WebSocketServer {
 
             // Mostrem per pantalla (servidor) el missatge
             System.out.println("Broadcast de " + getConnectionId(conn) + ": " + salut);
-        }else {
-            
+        } else {
             broadcast(getConnectionId(conn) + " ha dit: " + message);
             // Mostrem per pantalla (servidor) el missatge
             System.out.println("Broadcast de " + getConnectionId(conn) + ": " + message);
@@ -172,20 +181,6 @@ public class PR314Servidor extends WebSocketServer {
     
     public PR314Persona genRandPersona(){
         return new PR314Persona(noms.get((int) (Math.random() * noms.size())), (int) (Math.random() * 100));
-    }
-
-    public void enviaPersona(){
-        PR314Persona persona = genRandPersona();
-    }
-
-    @Override
-    public void onMessage(WebSocket conn, ByteBuffer message) {
-
-        // Enviem el missatge del client a tothom
-        broadcast(message.array());
-
-        // Mostrem per pantalla (servidor) el missatge
-        System.out.println(conn + ": " + message);
     }
 
     @Override
@@ -204,5 +199,36 @@ public class PR314Servidor extends WebSocketServer {
     public String getConnectionId (WebSocket connection) {
         String name = connection.toString();
         return name.replaceAll("org.java_websocket.WebSocketImpl@", "").substring(0, 3);
-    }<
+    }
+
+    public static byte[] objToBytes (Object obj) {
+        byte[] result = null;
+        try {
+            // Transforma l'objecte a bytes[]
+            ByteArrayOutputStream bos = new ByteArrayOutputStream();
+            ObjectOutputStream oos = new ObjectOutputStream(bos);
+            oos.writeObject(obj);
+            oos.flush();
+            result = bos.toByteArray();
+        } catch (IOException e) { e.printStackTrace(); }
+        return result;
+    }
+  
+    public static Object bytesToObject (ByteBuffer arr) {
+        Object result = null;
+        try {
+            // Transforma el ByteButter en byte[]
+            byte[] bytesArray = new byte[arr.remaining()];
+            arr.get(bytesArray, 0, bytesArray.length);
+  
+            // Transforma l'array de bytes en objecte
+            ByteArrayInputStream in = new ByteArrayInputStream(bytesArray);
+            ObjectInputStream is = new ObjectInputStream(in);
+            return is.readObject();
+  
+        } catch (ClassNotFoundException e) { e.printStackTrace();
+        } catch (IOException e) { e.printStackTrace(); }
+        return result;
+    }
+ 
 }
