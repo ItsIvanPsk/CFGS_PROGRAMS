@@ -1,9 +1,9 @@
 import java.net.*;
-import java.nio.charset.StandardCharsets;
 import java.util.concurrent.TimeUnit;
 import java.io.*;
 
 public class PR311Client {
+    static int msg_size = 1000;
     public static void main(String args[]) {
 
         InetAddress serverIP = null;
@@ -32,18 +32,18 @@ public class PR311Client {
         llista[3] = "Lleo";
 
         // Per cada una de les crides
-        for (int cnt = 0; cnt < llista.length; cnt = cnt + 1) {
+        for (int cnt = 0; cnt < llista.length; cnt++) {
             try {
                 // Enviar un enter en forma de byte[]
-                byte[] bytesEnviament = transformaStringABytes(llista[cnt]);
+                byte[] bytesEnviament = stringToBytes(msg_size, llista[cnt]);
                 DatagramPacket dp = new DatagramPacket(bytesEnviament, bytesEnviament.length, serverIP, serverPort);
                 ds.send(dp);
 
                 // Creem un buffer per rebre un long en forma de byte[]
-                byte bufferEntrada[] = new byte[Long.BYTES];
+                byte bufferEntrada[] = new byte[msg_size];
                 dp = new DatagramPacket(bufferEntrada, bufferEntrada.length);
                 ds.receive(dp);
-                String numeroRebut = transformaBytesAString(bufferEntrada);
+                String numeroRebut = bytesToString(bufferEntrada);
 
                 // Informem per consola i esperem a fer un altre enviament
                 System.out.println("Petició=" + llista[cnt] + "\tResposta=" + numeroRebut);
@@ -54,25 +54,35 @@ public class PR311Client {
         }
     }
 
-    static public byte[] transformaStringABytes (String valor) {
-        byte[] resultat = null;
+    static byte[] stringToBytes (int mida, String text) {
+        byte[] resultat = new byte[mida];
         try {
-            ByteArrayOutputStream baos = new ByteArrayOutputStream();
-            DataOutputStream dos = new DataOutputStream(baos);
-            dos.writeUTF(valor);
-            dos.close();
-            resultat = baos.toByteArray();
-        } catch (IOException e) { e.printStackTrace();  }
-        return resultat;
-    }
-
-    static public String transformaBytesAString (byte[] dades) {
-        String resultat = "";
-        try {
-            ByteArrayInputStream bais = new ByteArrayInputStream(dades);
-            DataInputStream dis = new DataInputStream(bais);
-            resultat = dis.readUTF();
+            // Crea un array amb la mida i la cadena de text
+            ByteArrayOutputStream bos = new ByteArrayOutputStream();
+            ObjectOutputStream oos = new ObjectOutputStream(bos);
+            oos.writeUTF(text);
+            oos.flush();
+            byte [] bytesResultat = bos.toByteArray();
+           
+            // Guarda els bytes (de mida i cadena) a l'array resultat
+            for (int cnt = 0; cnt < bytesResultat.length; cnt = cnt + 1) {
+                resultat[cnt] = bytesResultat[cnt];
+            }
         } catch (IOException e) { e.printStackTrace(); }
         return resultat;
     }
+    static String bytesToString (byte[] bytes) {
+        String resultat = "";
+        try {
+  
+            ByteArrayInputStream in = new ByteArrayInputStream(bytes);
+            ObjectInputStream is = new ObjectInputStream(in);
+            resultat = is.readUTF();
+  
+        } catch (UnsupportedEncodingException e) { e.printStackTrace();
+        } catch (IOException e) { e.printStackTrace(); }
+        return resultat;
+    }
+ 
+
 }

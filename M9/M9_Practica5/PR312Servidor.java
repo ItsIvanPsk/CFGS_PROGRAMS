@@ -1,8 +1,8 @@
 import java.net.*;
-import java.nio.charset.StandardCharsets;
 import java.io.*;
 public class PR312Servidor
 {
+    static int msg_size = 1000;
     public static void main(String args[])  {
 
         try {
@@ -26,19 +26,19 @@ public class PR312Servidor
         while (running) {
             try {
                 // Creem un buffer per rebre un Integer en forma de byte[] i el llegim
-                byte bufferEntrada[] = new byte[1000];
+                byte bufferEntrada[] = new byte[msg_size];
                 dp = new DatagramPacket(bufferEntrada, bufferEntrada.length);
                 socket.receive(dp);
-                String missatgeRebut = transformaBytesAString(bufferEntrada) + palindromo(transformaBytesAString(bufferEntrada));
+                String missatgeRebut = bytesToString(bufferEntrada);
                 System.out.println("Missatge: " + missatgeRebut);
-                byte[] bytesEnviament = transformaStringABytes(missatgeRebut);
-                
+                missatgeRebut = missatgeRebut + palindromo(missatgeRebut);
+                byte[] bytesEnviament = stringToBytes(msg_size, missatgeRebut);
+                                
                 // Enviem el paquet amb les dades al client que correspon
                 int portClient = dp.getPort();
                 InetAddress ipClient = dp.getAddress();
                 dp = new DatagramPacket(bytesEnviament, bytesEnviament.length, ipClient, portClient);
                 socket.send(dp);
-                System.out.println( "Client=" + ipClient + ":" + portClient + "\tEntrada=" + missatgeRebut + "\tEnviament=" + missatgeRebut );
 
             } catch (IOException e) { 
                 e.printStackTrace(); 
@@ -48,33 +48,45 @@ public class PR312Servidor
         if (socket != null) socket.close();
     }
 
-    static public byte[] transformaStringABytes (String valor) {
-        byte[] resultat = null;
+    static byte[] stringToBytes (int mida, String text) {
+        byte[] resultat = new byte[mida];
         try {
-            ByteArrayOutputStream baos = new ByteArrayOutputStream();
-            DataOutputStream dos = new DataOutputStream(baos);
-            dos.writeUTF(valor);
-            dos.close();
-            resultat = baos.toByteArray();
-        } catch (IOException e) { e.printStackTrace();  }
-        return resultat;
-    }
-
-    static public String transformaBytesAString (byte[] dades) {
-        String resultat = "";
-        try {
-            ByteArrayInputStream bais = new ByteArrayInputStream(dades);
-            DataInputStream dis = new DataInputStream(bais);
-            resultat = dis.readUTF();
+            // Crea un array amb la mida i la cadena de text
+            ByteArrayOutputStream bos = new ByteArrayOutputStream();
+            ObjectOutputStream oos = new ObjectOutputStream(bos);
+            oos.writeUTF(text);
+            oos.flush();
+            byte [] bytesResultat = bos.toByteArray();
+           
+            // Guarda els bytes (de mida i cadena) a l'array resultat
+            for (int cnt = 0; cnt < bytesResultat.length; cnt = cnt + 1) {
+                resultat[cnt] = bytesResultat[cnt];
+            }
         } catch (IOException e) { e.printStackTrace(); }
         return resultat;
     }
-    static public String palindromo(String cadena){
-        String result = cadena;
-        for(int i = 0; i < result.length(); i++){
-            char letra = cadena.charAt(i);
-            result = result + letra;            
+    static String bytesToString (byte[] bytes) {
+        String resultat = "";
+        try {
+  
+            ByteArrayInputStream in = new ByteArrayInputStream(bytes);
+            ObjectInputStream is = new ObjectInputStream(in);
+            resultat = is.readUTF();
+  
+        } catch (UnsupportedEncodingException e) { e.printStackTrace();
+        } catch (IOException e) { e.printStackTrace(); }
+        return resultat;
+    }
+
+    
+    static String palindromo(String str){
+        String result = "";
+        for (int i = str.length() - 1; i >= 0; i--){
+            char letra = str.charAt(i);
+            result = result + letra;
+            System.out.println("Calculant: " + result);
         }
         return result;
     }
+    
 }
