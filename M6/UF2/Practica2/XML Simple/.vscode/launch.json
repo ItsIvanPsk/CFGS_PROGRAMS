@@ -1,0 +1,52 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "XML Simple_609fc514"
+        },
+        {
+            "type": "java",
+            "name": "Launch MainSQLite",
+            "request": "launch",
+            "mainClass": "MainSQLite",
+            "projectName": "XML Simple_bb50d1eb",
+            "vmArgs": "--add-opens=java.base/java.nio=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED"
+        },
+        {
+            "type": "java",
+            "name": "Launch MainSQLite",
+            "request": "launch",
+            "mainClass": "MainSQLite",
+            "projectName": "XML Simple_8c09d434"
+        },
+        {
+            "type": "java",
+            "name": "Launch MainSQLite",
+            "request": "launch",
+            "mainClass": "MainSQLite",
+            "projectName": "XML Simple_102f0508"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "XML Simple_102f0508",
+            "vmArgs": "--add-opens=java.base/java.nio=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}",
+            "vmArgs": "--add-opens=java.base/java.nio=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED"
+        }
+    ]
+}

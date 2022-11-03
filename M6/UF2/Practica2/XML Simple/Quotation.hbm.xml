@@ -1,0 +1,13 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+<hibernate-mapping>
+   <class name="Quotation" table="Quotation">
+        <meta attribute = "class-description">
+            This class contains the Cart detail. 
+        </meta>
+        <id name="quotationId" type="long" column="quotationId">
+            <generator class="native"/>
+        </id>
+        <property name="type" column="type" type="string"/>
+   </class>
+</hibernate-mapping>
