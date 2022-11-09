@@ -1,4 +1,5 @@
 import java.awt.EventQueue;
+import java.awt.Font;
 import java.awt.ItemSelectable;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -6,6 +7,8 @@ import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Scanner;
 
 import javax.swing.JFrame;
@@ -39,7 +42,12 @@ public class princ extends JFrame implements ActionListener, ItemListener  {
 	private Label label_1;
 	private Label label;
 	private Button button_1;
+	private Button button_2;
 	private Label label_2;
+	
+	private File file;
+	
+	private String[] strs = new String[3];
 
 	/**
 	 * Launch the application.
@@ -61,6 +69,7 @@ public class princ extends JFrame implements ActionListener, ItemListener  {
 	 * Create the frame.
 	 */
 	public princ() {
+		Font font = new Font("Serif", Font.ITALIC, 15);
 		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 650, 450);
@@ -98,19 +107,17 @@ public class princ extends JFrame implements ActionListener, ItemListener  {
 				
 				if (returnVal == JFileChooser.APPROVE_OPTION) {
 					try {
-						File file = new File(fc.getSelectedFile().getAbsolutePath());
+						file = new File(fc.getSelectedFile().getAbsolutePath());
 					    Scanner myReader = new Scanner(file);
-					    String[] strs = new String[3];
 					    int i = 0;
 					    while (myReader.hasNextLine()) {
 					    	strs[i] = myReader.nextLine();
+					    	
 					        i++;
 					    }
+					    System.out.println("Open:\n" + strs[0] + " - " + strs[1] + " - " + strs[2] + " - ");
 					    
-					    updateUI(strs[0],
-					    		strs[1],
-					    		strs[2]
-					    		);
+					    updateUI();
 					    myReader.close();
 					    } catch (FileNotFoundException e2) {
 					    	System.out.println("An error occurred.");
@@ -134,23 +141,61 @@ public class princ extends JFrame implements ActionListener, ItemListener  {
 		button_1 = new Button("Save File");
 		button_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				
+				saveUI();
 			}
 		});
+		
 		button_1.setBounds(418, 61, 70, 22);
 		contentPane.add(button_1);
 		
 		label_2 = new Label("RPM Maquina");
-		label_2.setBounds(71, 74, 70, 22);
+		label_2.setBounds(70, 74, 70, 22);
 		contentPane.add(label_2);
 		
 		okBtn = new JButton("OK");
 		okBtn.setBounds(335, 227, 89, 23);
 	}
 
-	public void updateUI(String bool, String activeMachines, String rev) {
-		slider.setValue(Integer.parseInt(activeMachines));
-		tglbtnNewToggleButton.setSelected(Boolean.parseBoolean(bool));
+	public void updateUI() {
+		tglbtnNewToggleButton.setSelected(Boolean.parseBoolean(strs[0]));
+		spinner.setValue(strs[1]);
+		slider.setValue(Integer.parseInt(strs[2]));
+		
+	}
+	
+	public void refreshUI() {
+		if(tglbtnNewToggleButton.isSelected()) {
+			strs[0] = "true";
+		} else { strs[0] = "false";}
+		strs[1] = spinner.getValue().toString();
+		Integer aux = slider.getValue();
+		strs[2] = aux.toString();
+
+		System.out.println("Open:\n" + strs[0] + " - " + strs[1] + " - " + strs[2] + " - ");
+
+	}
+	
+	public void saveUI() {
+		JFileChooser fc = new JFileChooser();
+		FileNameExtensionFilter filter = new FileNameExtensionFilter(
+			    "TXT files", "txt");
+			fc.setFileFilter(filter);
+		int returnVal = fc.showOpenDialog(contentPane);
+	
+		if (returnVal == JFileChooser.APPROVE_OPTION) {
+			try {
+				refreshUI();
+				FileWriter myWriter = new FileWriter(fc.getSelectedFile().getAbsolutePath());
+				myWriter.write(strs[0] + "\n" + strs[1] + "\n" + strs[2]);
+			    System.out.println("Open:\n" + strs[0] + " - " + strs[1] + " - " + strs[2] + " - ");
+
+			    myWriter.close();
+
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
 	}
 	
 	@Override
@@ -181,9 +226,9 @@ public class princ extends JFrame implements ActionListener, ItemListener  {
     }  
     public void itemStateChanged(ItemEvent eve) {  
         if (tglbtnNewToggleButton.isSelected())  
-        	tglbtnNewToggleButton.setText("OFF");  
-        else  
         	tglbtnNewToggleButton.setText("ON");  
+        else  
+        	tglbtnNewToggleButton.setText("OFF");  
     }  
 	
 }
