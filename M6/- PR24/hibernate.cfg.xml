@@ -1,0 +1,11 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+   <session-factory>
+      <!-- List of XML mapping files -->
+      <mapping class = "Autor"/>
+      <mapping class = "Llibre"/>
+      <mapping class = "Biblioteca"/>
+      <mapping class = "Persona"/>
+   </session-factory>
+</hibernate-configuration>
