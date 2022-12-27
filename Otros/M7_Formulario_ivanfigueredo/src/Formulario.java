@@ -24,7 +24,6 @@ public class Formulario extends JFrame implements ActionListener {
     JComboBox dropbox;
     JCheckBox checkbox;
     JRadioButton radioButton;
-    private final Action action = new SwingAction();
 
 	public static void main(String[] args) {
 		Formulario form = new Formulario();
@@ -93,7 +92,6 @@ public class Formulario extends JFrame implements ActionListener {
 		bg.add(radioButton);
 		
 		JButton enviarButton = new JButton("ENVIAR");
-		enviarButton.setAction(action);
 		enviarButton.setBounds(90, 227, 259, 23);
 		bg.add(enviarButton);
 
@@ -103,7 +101,6 @@ public class Formulario extends JFrame implements ActionListener {
 	
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		// TODO : a
 		
 	}
 }
